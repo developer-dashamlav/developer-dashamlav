@@ -25,21 +25,20 @@
             align-items: center;
             gap: 20px;
             a{
-                width: 150px;
-                height: 50px;
+                padding: 1rem 3rem 1rem 3rem;
+                font-size: 1.25rem;
+                border-radius: 50px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-weight: 600;
+                font-weight: 800;
                 text-decoration: none;
             }
             .CTA_Button{
-                border-radius: 50px;
                 background-color: darkolivegreen;
             }
             .CTA_Secondary{
-                border-radius: 50px;
-                background-color: darkolivegreen;
+                background-color: #101010;
             }
         }
         .contact_details{
@@ -61,8 +60,10 @@
     }
     .hero_logo{
         flex-basis: 50%;
-        transform: translate(-15%, -5%);
+        position: fixed;
+        transform: translate(100%, -5%);
         img{
+            transition: all 1s;
             height: 1200px;
             // width: 500px;
             transform-origin: center;

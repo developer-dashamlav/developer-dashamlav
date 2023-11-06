@@ -1,11 +1,26 @@
 nav{
-    // height: 8vh;
-    // position: relative;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
     padding: 0px 10vh;
     background-color: #161616;
+    .container-fluid{
+        .logo{
+            img{
+                height: 3rem;
+            }
+        }
+        .contact_button_navigation{
+            font-weight: 600;
+            margin-left: 2rem;
+            padding: 0.75rem 2.5rem 0.75rem 2.5rem;
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            margin-left: 2rem;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+    }
     .logo{
         display: flex;
         align-items: center;

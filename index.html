@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
     <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
@@ -13,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand logo" href="home" style="font-size: 24px; font-weight: bold; color: white;">
-            <img src="./assets/dashamlav_logo.svg" alt="dashamlav_logo" width="45" height="36" class="d-inline-block align-text-top animate__animated animate__bounce">
+            <img src="./assets/dashamlav_logo.svg" alt="dashamlav_logo" class="d-inline-block align-text-top animate__animated animate__bounce">
             Dashamlav
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,17 +26,17 @@
                 <a class="nav-link text-light" href="/">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="/">About</a>
+                <a class="nav-link text-light" href="/about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-light" href="/">Blog</a>
               </li>
-              <li class="nav-item d-lg-none">
+              <li class="d-lg-none nav-item">
                 <a class="nav-link rounded-pill text-light" style="background-color: darkolivegreen;" href="/">Contact</a>
               </li>
             </ul>
           </div>
-          <a class="nav-link rounded-pill text-light d-none d-lg-block" style="background-color: darkolivegreen;" href="contact.html">Contact</a>
+          <a class="nav-link rounded-pill text-light d-none d-lg-block contact_button_navigation" style="background-color: darkolivegreen;" href="contact.html">Contact</a>
         </div>
       </nav>
                         
@@ -55,7 +56,7 @@
                 </div>
             </section>
             <section class="hero_logo">
-                <img src="./assets/dashamlav_logo.svg" alt="">
+                <img src="./assets/dashamlav_logo.svg" alt="" id="logo_background">
             </section>
         </section>
         <section class="services">
@@ -398,7 +399,7 @@
         </section>
         <section class="pre_footer">
             <div class="messages">
-                <h4 class="message message_from_us">In short, We curate and create systematic, compact and uncomplicated reporting solutions for your D2C business.</h4>
+                <h4 class="message message_from_us">We curate and create systematic, compact and uncomplicated reporting solutions for your D2C business.</h4>
                 <h4 class="message reply_from_them">Sure, let's talk hit me on my mail here...</h4>
                 <input type="email" required placeholder="your mail here" class="message reply_from_them_2">
                 <input type="submit" class="message message_from_us_2" value="Sure let's talk.">
@@ -480,5 +481,16 @@
 
     // Call the function to initiate the text update
     updateTitle();
+
+    const logo = document.getElementById('logo_background');
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) {
+        logo.style.filter = 'blur(100px)';
+    } else {
+        logo.style.filter = 'none';
+    }
+    });
+
 </script>
 </html>
