@@ -1,0 +1,59 @@
+.pre_footer{
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10vh 10vh;
+    .messages{
+        position: relative;
+        .message{
+            padding: 50px;
+            font-weight: 600;
+            font-size: 36px;
+            font-family: 'Montserrat';
+            margin-bottom: 50px;
+            color: black;
+        }
+        .message_from_us{
+            border-radius: 60px 60px 60px 0px;
+            background-color: darkolivegreen;
+            color: black;
+        }
+        .message_from_us_2{
+            margin-top: 20vh;
+            border-radius: 0px 60px 60px 60px;
+            background-color: darkolivegreen;
+        }
+        .reply_from_them{
+            // position: absolute;
+            margin-left: 10vh;
+            right: 0px;
+            padding: 50px;
+            border-radius: 60px 60px 0px 60px;
+            color: black;
+            background-color: whitesmoke;
+        }
+        .reply_from_them_2{
+            position: absolute;
+            margin-left: 10vh;
+            right: 0px;
+            border-radius: 60px 0px 60px 60px;
+            background-color: whitesmoke;
+        }
+    }
+    .logo{
+        padding: 50px;
+        .logo_image{
+            background-color: darkolivegreen;
+            padding: 50px;
+            img{
+                height: 50vh;
+                background-color: whitesmoke;
+            }
+        }
+        h6{
+            font-size: 64px;
+            color: white;
+        }
+    }
+}

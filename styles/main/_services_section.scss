@@ -1,0 +1,115 @@
+.services{
+    position: relative;
+    z-index: 2;
+    // height: 100vh;
+    padding: 10vh 10vh;
+    // background-color: darkolivegreen;
+    h2{
+        font-size: 144px;
+        font-family: 'Montserrat';
+        margin-bottom: 50px;
+    }
+    .services_accordian{
+        margin-left: -32px;
+        // padding: 20px 0px 0px 0px;
+        list-style-type: none;
+        li{
+            margin: 30px 0px;
+            border-bottom: 2px solid white;
+            .accordian_item_title{
+                padding: 10px 5vh 10px 5vh;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .service_head{
+                    font-size: 42px;
+                    font-weight: 500;
+                }
+                img{
+                    height: 36px;
+                    filter: invert(1);
+                }
+            }
+            ul{
+                transition: all 0.5s ease;
+                list-style-type: none;
+                display: grid;
+                // height: 0px;
+                // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto;
+                gap: 20px;
+                li{
+                    border: none;
+                    h4{
+                        margin: 5px 0px 10px 0px;
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 20px;
+                        color: whitesmoke;
+                    }
+                }
+            }
+        }
+        // li:hover{
+        //     ul{
+        //         height: auto;
+        //         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        //     }
+        // }
+    }
+}
+@media (max-width: 768px) {
+    .services {
+      padding: 5vh 5vh;
+      h2 {
+        font-size: 48px;
+      }
+      .services_accordian {
+        li {
+          margin: 20px 0px;
+          .accordian_item_title {
+            padding: 10px 2.5vh 10px 2.5vh;
+            .service_head {
+              font-size: 24px;
+            }
+            img {
+              height: 24px;
+            }
+          }
+          ul {
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            gap: 10px;
+            li {
+              h4 {
+                font-size: 18px;
+              }
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .services {
+      padding: 8vh 8vh;
+      h2 {
+        font-size: 96px;
+      }
+      .services_accordian {
+        li {
+          .accordian_item_title {
+            padding: 10px 3vh 10px 3vh;
+          }
+        }
+      }
+    }
+  }
+  

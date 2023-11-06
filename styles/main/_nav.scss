@@ -1,0 +1,110 @@
+nav{
+    // height: 8vh;
+    // position: relative;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    padding: 0px 10vh;
+    background-color: #161616;
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img{
+            height: 40px;
+            // width: 500px;
+            transform-origin: center;
+            animation: rotate_logo 5s linear infinite;
+            animation-play-state: paused;
+        }
+        @keyframes rotate_logo {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(359deg);
+            }
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    .logo:hover{
+        img{
+            animation-play-state: running;
+        }
+    }
+    .desktop_menu{
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            gap: 20px;
+            li{
+                a{
+                    font-size: 18px;
+                    font-size: 500;
+                }
+            }
+        }
+    }
+    .mobile_menu{
+        display: none;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style-type: none;
+            flex-flow: column;
+            gap: 20px;
+            li{
+                a{
+                    font-size: 16px;
+                    font-size: 500;
+
+                }
+            }
+        }
+    }
+    .desktop_contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: darkolivegreen;
+        a{
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (orientation: portrait){
+    nav{
+        .desktop_menu{
+            display: none;
+        }
+        .mobile_menu{
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    nav{
+        padding: 0px 5vw 0px 5vw;
+    }
+    .navbar-collapse {
+      background-color: #161616;
+    }
+    .navbar-nav .nav-link {
+      font-weight: 600;
+    }
+  }
+  
