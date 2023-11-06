@@ -301,7 +301,7 @@ nav .desktop_contact a {
     padding: 0px 5vw 0px 5vw;
   }
   .services h2 {
-    font-size: 96px;
+    font-size: 2rem;
   }
   .services .services_accordian li .accordian_item_title {
     padding: 10px 3vh 10px 3vh;
@@ -370,7 +370,7 @@ nav .desktop_contact a {
     padding: 0px 5vw 0px 5vw;
   }
   .clients h2 {
-    font-size: 96px;
+    font-size: 2rem;
   }
   .clients .brands {
     gap: 40px;
@@ -455,20 +455,13 @@ nav .desktop_contact a {
     padding: 0px 5vw 0px 5vw;
   }
   .products_section h2 {
-    font-size: 96px;
+    font-size: 2rem;
   }
-  .products_section .brands {
-    gap: 40px;
-  }
-  .products_section .brands .brand {
-    padding: 40px;
-    border-radius: 40px;
-  }
-  .products_section .brands .brand h4 {
-    font-size: 36px;
-  }
-  .products_section .brands .brand p {
-    font-size: 20px;
+  .products_section .products {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 30px;
   }
 }
 .pre_footer {
@@ -530,6 +523,17 @@ nav .desktop_contact a {
   color: white;
 }
 
+@media (max-width: 1024px) {
+  .pre_footer {
+    padding: 0px 5vw 0px 5vw;
+  }
+  .pre_footer .messages .message {
+    font-size: 2rem;
+  }
+  .pre_footer .logo {
+    display: none;
+  }
+}
 .footer {
   padding: 10vh 10vh 0 10vh;
   text-align: center;
@@ -571,6 +575,9 @@ nav .desktop_contact a {
   margin-right: 20px;
 }
 @media (max-width: 768px) {
+  .footer footer {
+    padding: 0px 5vw 0px 5vw;
+  }
   .footer .footer-row {
     flex-direction: column;
   }

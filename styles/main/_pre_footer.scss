@@ -57,3 +57,17 @@
         }
     }
 }
+
+
+@media (max-width: 1024px) {
+    .pre_footer{
+        padding: 0px 5vw 0px 5vw;
+        .messages{
+            .message{
+                font-size: 2rem;
+            }
+        }
+        .logo{display: none;}
+    }
+}
+  

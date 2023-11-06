@@ -50,17 +50,18 @@
     }
   
     @media (max-width: 768px) {
-      .footer-row {
-        flex-direction: column;
-  
-        .social-links a {
-          margin: 5px;
+        footer{
+            padding: 0px 5vw 0px 5vw;
         }
-  
-        .footer-links a {
-          margin-right: 10px;
+        .footer-row {
+            flex-direction: column;
+            .social-links a {
+                margin: 5px;
+            }
+            .footer-links a {
+                margin-right: 10px;
+            }   
         }
-      }
     }
   }
   
