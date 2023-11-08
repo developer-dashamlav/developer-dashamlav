@@ -35,10 +35,10 @@
                 text-decoration: none;
             }
             .CTA_Button{
-                background-color: darkolivegreen;
+                background-color: $primary_color;
             }
             .CTA_Secondary{
-                background-color: #101010;
+                background-color: $secondary_background_color;
             }
         }
         .contact_details{

@@ -1,0 +1,54 @@
+.services_page{
+    margin: none;
+    // padding: none;
+    .hero_section{
+        margin-top: 40vh;
+        // padding: 10vh 0px;
+        .hero_text{
+            h1{
+                font-size: 10rem;
+            }
+        }
+    }
+    .services{
+        .services_accordian{
+            .accordian_item{
+                margin-bottom: 2rem;
+                .accordian_item_title{
+                    margin-bottom: 1rem;
+                    h3{
+                        font-size: 5rem;
+                    }
+                    img{
+                        transform: rotate(180deg, -90deg);
+                        padding: 2rem;
+                        border-radius: 100%;
+                        background-color: white;
+                        height: 7rem;
+                    }
+                }
+                ul{
+                    padding-bottom: 2.5rem;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    gap: 0px;
+                    li{
+                        img{
+                            padding: 1rem;
+                            // margin-top: 2rem;
+                            height: 6rem;
+                            filter: invert(1);
+                        }
+                        h4{
+                            font-size: 2rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                            width: 35vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

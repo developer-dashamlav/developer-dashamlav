@@ -2,18 +2,18 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    color: white;
+    color: $primary_text_color;
     font-family: Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
-    color: white;
+    color: $primary_text_color;
 }
 
 body{
     transition: all 0.5s ease;
-    background-color: #161616;
     overflow-x: hidden;
+    background-color: $primary_background_color;
 }
 body::-webkit-scrollbar{
     width: 3px;
