@@ -88,11 +88,6 @@ body::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 1024px) {
-  #background {
-    display: none;
-  }
-}
 nav {
   position: relative;
   display: flex;
@@ -260,12 +255,13 @@ nav .buttons .menu_toggle {
   position: relative;
   font-size: 72px;
   font-weight: 600;
-  width: 60vw;
   font-family: "Inter";
 }
 .hero_section .hero_text h1 span {
+  width: 60vw;
   transform-origin: top left;
   font-family: "Inter";
+  display: block;
   mix-blend-mode: difference;
 }
 .hero_section .hero_text p {
@@ -340,8 +336,11 @@ nav .buttons .menu_toggle {
     padding: 0px 5vw 0px 5vw;
   }
   .hero_section .hero_text h1 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  .hero_section .hero_text h1 span {
+    width: 90%;
   }
   .hero_section .hero_text p {
     font-size: 16px;
