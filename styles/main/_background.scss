@@ -1,0 +1,26 @@
+#background{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    // background-color: white;
+    filter: blur(200px) saturate(150%);
+    #background_image{
+        position: absolute;
+        z-index: -1;
+        right: 0px;
+        height: 150vh;
+        filter: blur(50px);
+        animation: rotate 30s linear infinite;
+    }
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(359deg);
+        }
+    }
+}

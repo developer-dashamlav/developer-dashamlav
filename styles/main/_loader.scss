@@ -1,0 +1,29 @@
+.loader{
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    h6{
+        box-sizing: border-box;
+        mix-blend-mode: difference;
+        font-weight: 600;
+        margin-left: 10vh;
+        font-size: 10rem;
+        font-family: 'Inter';
+        .loader_text_charater{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .loader{
+        h6{
+            margin: 5vw;
+            font-size: 3rem;
+        }
+    }
+}

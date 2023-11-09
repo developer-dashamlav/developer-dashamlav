@@ -1,4 +1,6 @@
 .hero_section{
+    position: relative;
+    z-index: 1;
     height: 100vh;
     padding: 0px 10vh;
     margin-top: 10vh;
@@ -6,12 +8,16 @@
     .hero_text{
         flex-basis: 50%;
         h1{
-            font-size: 84px;
+            position: relative;
+            font-size: 72px;
             font-weight: 600;
             width: 60vw;
-            font-family: 'Montserrat';
+            font-family: 'Inter';
             span{
-                font-family: 'Montserrat';
+                transform-origin: top left;
+                font-family: 'Inter';
+                // color: $primary_text_color;
+                mix-blend-mode: difference;
             }
         }
         p{
@@ -22,7 +28,7 @@
         }
         .CTA{
             display: flex;
-            align-items: center;
+            // align-items: center;
             gap: 20px;
             a{
                 padding: 1rem 3rem 1rem 3rem;
@@ -36,9 +42,11 @@
             }
             .CTA_Button{
                 background-color: $primary_color;
+                border: 3px solid $primary_color;
             }
             .CTA_Secondary{
-                background-color: $secondary_background_color;
+                // background-color: $secondary_background_color;
+                border: 3px solid $primary_text_color;
             }
         }
         .contact_details{
@@ -54,7 +62,7 @@
             .line{
                 height: 3px;
                 width: 50px;
-                background-color: white;
+                background-color: $primary_text_color;
             }
         }
     }
@@ -97,6 +105,15 @@
             }p{
                 font-size: 16px;
                 width: 90%;
+            }
+            .CTA{
+                width: 90vw;
+                // justify-content: flex-start;
+                flex-direction: column;
+                // flex-basis: 50%;
+            }
+            .contact_details{
+                display: none;
             }
         }
         .hero_logo {

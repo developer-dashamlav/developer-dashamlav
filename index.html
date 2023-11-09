@@ -4,49 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/dark_theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/dashamlav_logo.svg">
+    <link rel="stylesheet" href="styles/light_theme.css">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Document</title>
+    <title>Dashamlav.in</title>
 </head>
-<body class="dark_theme" current_theme="dark">
-    <div class="loader"></div>
-    <nav>
-        <div class="logo">
-            <div class="icon">
-                <img src="./assets/dashamlav_logo.svg" alt="dashamlav logo">
+<body class="light_theme" current_theme="dark" data-scroll-container>
+    <div class="loader" id="loader">
+        <!-- <h6 class="loader_text">LOADING...</h6> -->
+        <h6 class="loader_text">LOADING...</h6>
+        <h6 class="loader_text" style="color: darkolivegreen;">DASHAMLAV</h6>
+        <!-- <div class="loading_bar"></div> -->
+    </div>
+    <div id="background">
+        <img id="background_image" src="./assets/dashamlav_background_logo.png" alt="background image">
+    </div>
+    <main data-scroll-section>
+        <nav>
+            <div class="logo">
+                <div class="icon">
+                    <img src="./assets/dashamlav_logo.svg" alt="dashamlav logo">
+                </div>
+                <a href="/index.html">Dashamlav</a>
             </div>
-            <a href="/index.html">Dashamlav</a>
-        </div>
-        <div class="menu menu_open">
-            <div class="links">
-                <a href="/services.html">SERVICES</a>
-                <a href="/about.html">ABOUT</a>
-                <a href="/blog.html">BLOG</a>
-                <a href="/team.html">TEAM</a>  
-                <a href="/contact.html">CONTACT</a>  
+            <div class="menu menu_open">
+                <div class="links">
+                    <a href="/services.html">SERVICES</a>
+                    <a href="/about.html">ABOUT</a>
+                    <a href="/blog.html">BLOG</a>
+                    <a href="/team.html">TEAM</a>  
+                    <a href="/contact.html">CONTACT</a>  
+                </div>
+                <div class="links">
+                    <a href="/privacy_policy.html">Privacy Policy</a>
+                    <a href="/faq.html">FAQ</a>
+                </div>
             </div>
-            <div class="links">
-                <a href="/privacy_policy.html">Privacy Policy</a>
-                <a href="/faq.html">FAQ</a>
+            <div class="buttons">
+                <div class="dark_theme_switch" id="theme_switch">
+                    <img src="./assets/theme_switch.svg" alt="dark theme switch">
+                </div>
+                <div class="menu_toggle" id="menu_toggle_switch">
+                    <img src="./assets/menu_icon.svg" alt="menu open toggle">
+                </div>
+                <a class="contact_nav_CTA" href="./services.html">
+                    CONTACT
+                </a>
             </div>
-        </div>
-        <div class="buttons">
-            <div class="dark_theme_switch" id="theme_switch">
-                <img src="./assets/theme_switch.svg" alt="dark theme switch">
-            </div>
-            <div class="menu_toggle" id="menu_toggle_switch">
-                <img src="./assets/menu_icon.svg" alt="menu open toggle">
-            </div>
-            <a class="contact_nav_CTA" href="./services.html">
-                CONTACT
-            </a>
-        </div>
-    </nav>
-                        
-    <main>
+        </nav>
         <section class="hero_section">
             <section class="hero_text">
-                <h1>​Fueling Digital Triumphs: Your Gateway to <span id="hero_dynamic_title" style="color: darkolivegreen;">E-Commerce</span></h1>
+                <h1>
+                    <span class="hero_text_h1">​Fueling Digital Triumphs:</span><br>
+                    <span class="hero_text_h1">Your Gateway to E-Commerce</span>
+                    <!-- <span id="hero_dynamic_title"></span><br> -->
+                    <span class="hero_text_h1">Excellence.</span>
+                </h1>
                 <p>​Unleash Your Online Potential with Tailored E-Commerce Solutions and Amplify Your Brand's Voice through Expert Social Media Strategies.</p>
                 <div class="CTA">
                     <a href="contact.html" class="CTA_Button">CONTACT</a>
@@ -58,9 +74,9 @@
                     <p>+91 639 269 2911</p>
                 </div>
             </section>
-            <section class="hero_logo">
+            <!-- <section class="hero_logo">
                 <img src="./assets/dashamlav_logo.svg" alt="" id="logo_background">
-            </section>
+            </section> -->
         </section>
         <section class="services">
             <h2>Services</h2>
@@ -149,7 +165,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="accordian_item">                    
+                <!-- <li class="accordian_item">                    
                     <div class="accordian_item_title">
                         <h3 class="service_head">Content Marketing</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
@@ -318,7 +334,7 @@
                     </ul>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
-                        <h3 class="service_head">360 deg E-Commerce Strategies and Consultation</h3>
+                        <h3 class="service_head">360° E-Commerce Strategies and Consultation</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
                     <ul>
@@ -343,7 +359,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
                         </li>
                     </ul>
-                </li>
+                </li> -->
             </ul>
         </section>
         <section class="clients">
@@ -355,7 +371,7 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi fuga cupiditate adipisci, suscipit eveniet animi provident corrupti veritatis accusamus sapiente dicta quisquam nulla voluptates dolorem sequi recusandae ratione fugiat. Eum!</p>    
                         <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
                     </div>
-                    <img src="./assets/businessman_1" alt="chuk owener picture">
+                    <img src="./assets/logo_1.jpg" alt="chuk owener picture">
                 </div>
                 <div class="brand">
                     <div class="client_intro">
@@ -363,7 +379,7 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi fuga cupiditate adipisci, suscipit eveniet animi provident corrupti veritatis accusamus sapiente dicta quisquam nulla voluptates dolorem sequi recusandae ratione fugiat. Eum!</p>    
                         <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
                     </div>
-                    <img src="./assets/businessman_2" alt="Lycot owner picture">
+                    <img src="./assets/logo_2.jpg" alt="chuk owener picture">
                 </div>
                 <div class="brand">
                     <div class="client_intro">
@@ -443,35 +459,75 @@
                 <p>DIGITAL.RESELLERS</p>
             </div>
         </section>
-    </main>
-    <footer>
-        <h6>Copyright 2021-2023 Dashamlav.in</h6>
-        <div class="footer-row">
-            <p class="digital-resellers">DIGITAL.RESELLERS</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Whatsapp</a>
-                <a href="#">Linkedin</a>
+        <footer>
+            <h6>Copyright 2021-2023 Dashamlav.in</h6>
+            <div class="footer-row">
+                <p class="digital-resellers">DIGITAL.RESELLERS</p>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Whatsapp</a>
+                    <a href="#">Linkedin</a>
+                </div>
             </div>
-        </div>
-        <div class="divider"></div>
-        <div class="footer-row">
-            <p>123 Street Name</p>
-            <p>City, Postal Code</p>
-            <p>State, Country</p>
-        </div>
-        <div class="footer-row">
-            <div class="footer-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">FAQ</a>
-              <a href="#">Cookie Policy</a>
+            <div class="divider"></div>
+            <div class="footer-row">
+                <p>123 Street Name</p>
+                <p>City, Postal Code</p>
+                <p>State, Country</p>
             </div>
-            <p class="official-mail">contact@dashamlav.in</p>
-        </div>
-      </footer>
-      
+            <div class="footer-row">
+                <div class="footer-links">
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">FAQ</a>
+                  <a href="#">Cookie Policy</a>
+                </div>
+                <p class="official-mail">contact@dashamlav.in</p>
+            </div>
+          </footer>
+    </main>  
 </body>
 <script>
+    // GSAP goes here.
+    gsap.to(".loader_text", {
+        y: -150, 
+        opacity: 0,
+        skewY: -5,
+        ease: 'power4.out',
+        duration: 0.5, 
+        delay: 2,
+        stagger: 0.05
+    });
+    gsap.from("nav", {
+        opacity: 0,
+        y: 50,
+        delay: 2.5,
+        duration: 2,
+        ease: "power4.out"
+    });
+    gsap.from(".hero_section", {
+        opacity: 0,
+        y: 100,
+        delay: 3,
+        duration: 2,
+        ease: "power4.out"
+    });
+
+    // Locomotive scroll initilized here.
+    const scroller = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        smoothMobile: 10, // Adjust this value to make it faster on mobile
+        lerp: 0.15, // Adjust this value to make it faster
+        touchMultiplier: 3
+    });
+    // const loader = document.getElementById("loader")
+    // window.addEventListener('load', function() {
+    //     loader.classList.toggle = "close"
+    //     console.log("page loaded")
+    //     // loader.style.height = "0px";
+    //     loader.style.opacity = "0";
+    //     // loader.style.clipPath = "polygon(0 0, 100% 0, 100% 0, 0 0)";
+    // })
 
     function addThemeSwitchEventListener() {
         const themeSwitch = document.getElementById('theme_switch');
@@ -527,65 +583,65 @@
 
     document.getElementById('menu_toggle_switch').addEventListener('click', toggleMenu);
 
-    const accordianItems = document.querySelectorAll('.accordian_item');
-    const colors = ['#38662B', '#003200', '#005E00']; // Add your HEX color codes here
-    let currentColorIndex = 0;
+    // const accordianItems = document.querySelectorAll('.accordian_item');
+    // const colors = ['#38662B', '#003200', '#005E00']; // Add your HEX color codes here
+    // let currentColorIndex = 0;
 
-    accordianItems.forEach((accordianItem, index) => {
-    let content = accordianItem.querySelector('ul');
-    let contentHeight = content.scrollHeight;
-    if (index !== 0) {
-        content.style.maxHeight = '0';
-        content.style.opacity = '0';
-    } else {
-        accordianItem.classList.add('open');
-    }
+    // accordianItems.forEach((accordianItem, index) => {
+    // let content = accordianItem.querySelector('ul');
+    // let contentHeight = content.scrollHeight;
+    // if (index !== 0) {
+    //     content.style.maxHeight = '0';
+    //     content.style.opacity = '0';
+    // } else {
+    //     accordianItem.classList.add('open');
+    // }
 
-    accordianItem.addEventListener('click', function (event) {
-        event.stopPropagation();
-        if (content.style.maxHeight === '0px') {
-        accordianItems.forEach((item) => {
-            let itemContent = item.querySelector('ul');
-            itemContent.style.maxHeight = '0';
-            itemContent.style.opacity = '0';
-            item.classList.remove('open');
-        });
-        content.style.maxHeight = contentHeight + 'px';
-        content.style.opacity = '1';
-        accordianItem.classList.add('open');
-        document.body.style.backgroundColor = colors[index];
-        } else {
-        content.style.maxHeight = '0';
-        content.style.opacity = '0';
-        accordianItem.classList.remove('open');
-        document.body.style.backgroundColor = colors[index];
-        }
-    });
-    });
+    // accordianItem.addEventListener('click', function (event) {
+    //     event.stopPropagation();
+    //     if (content.style.maxHeight === '0px') {
+    //     accordianItems.forEach((item) => {
+    //         let itemContent = item.querySelector('ul');
+    //         itemContent.style.maxHeight = '0';
+    //         itemContent.style.opacity = '0';
+    //         item.classList.remove('open');
+    //     });
+    //     content.style.maxHeight = contentHeight + 'px';
+    //     content.style.opacity = '1';
+    //     accordianItem.classList.add('open');
+    //     // document.body.style.backgroundColor = colors[index];
+    //     } else {
+    //     content.style.maxHeight = '0';
+    //     content.style.opacity = '0';
+    //     accordianItem.classList.remove('open');
+    //     // document.body.style.backgroundColor = colors[index];
+    //     }
+    // });
+    // });
 
-    document.addEventListener('click', function (event) {
-    const isClickInside = Array.from(accordianItems).some(item => item.contains(event.target));
-    if (!isClickInside) {
-        document.body.style.backgroundColor = '#161616';
-    }
-    });
+    // document.addEventListener('click', function (event) {
+    // const isClickInside = Array.from(accordianItems).some(item => item.contains(event.target));
+    // if (!isClickInside) {
+    //     document.body.style.backgroundColor = '#161616';
+    // }
+    // });
 
 
     // Array of strings to be used as replacements
     const titles = ['Social Media', 'Advertising', 'E-Commerce', 'Marketplace', 'Content', 'SEO', 'Analytics'];
 
-    // Function to update the element text every 2 seconds
-    function updateTitle() {
-    const titleElement = document.getElementById('hero_dynamic_title');
-    let index = 0;
-    setInterval(() => {
-        titleElement.textContent = titles[index];
-        index = (index + 1) % titles.length;
-    }, 1000); // 2 seconds interval
-    }
+    // // Function to update the element text every 2 seconds
+    // function updateTitle() {
+    // const titleElement = document.getElementById('hero_dynamic_title');
+    // let index = 0;
+    // setInterval(() => {
+    //     titleElement.textContent = titles[index];
+    //     index = (index + 1) % titles.length;
+    // }, 1000); // 2 seconds interval
+    // }
 
-    // Call the function to initiate the text update
-    updateTitle();
+    // // Call the function to initiate the text update
+    // updateTitle();
 
     const logo = document.getElementById('logo_background');
 

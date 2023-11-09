@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/dark_theme.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Document</title>
+</head>
+<body class="dark_theme" current_theme="dark">
+    <div class="loader"></div>
+    <nav>
+        <div class="logo">
+            <div class="icon">
+                <img src="./assets/dashamlav_logo.svg" alt="dashamlav logo">
+            </div>
+            <a href="/index.html">Dashamlav</a>
+        </div>
+        <div class="menu menu_open">
+            <div class="links">
+                <a href="/services.html">SERVICES</a>
+                <a href="/about.html">ABOUT</a>
+                <a href="/blog.html">BLOG</a>
+                <a href="/team.html">TEAM</a>  
+                <a href="/contact.html">CONTACT</a>  
+            </div>
+            <div class="links">
+                <a href="/privacy_policy.html">Privacy Policy</a>
+                <a href="/faq.html">FAQ</a>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="dark_theme_switch" id="theme_switch">
+                <img src="./assets/theme_switch.svg" alt="dark theme switch">
+            </div>
+            <div class="menu_toggle" id="menu_toggle_switch">
+                <img src="./assets/menu_icon.svg" alt="menu open toggle">
+            </div>
+            <a class="contact_nav_CTA" href="./services.html">
+                CONTACT
+            </a>
+        </div>
+    </nav>
+                        
+    <main class="privacy_policy">
+        <section class="hero_section">
+            <section class="hero_text">
+                <h1>Privacy Policy @ <br><span id="hero_dynamic_title" style="color: darkolivegreen;">DASHAMLAV</span></h1>
+                <div class="CTA">
+                    <a href="contact.html" class="CTA_Button">CONTACT</a>
+                </div>
+            </section>
+            <section class="hero_logo">
+                <img src="./assets/dashamlav_logo.svg" alt="" id="logo_background">
+            </section>
+        </section>
+        <section class="services">
+            <h2>
+                Your privacy is important to us. It is our policy to respect your privacy regarding any information we may collect from you across our website.
+
+                We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used.
+                <br><br><br>
+                We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use, or modification.
+                
+                We don't share any personally identifying information publicly or with third-parties, except when required to by law.
+                <br><br><br>
+                Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.
+                
+                You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.
+                
+                Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.
+                <br><br><br>
+                This policy is effective as of 12 Nov 2023.
+
+            </h2>
+        </section>
+        <section class="pre_footer">
+            <div class="messages">
+                <h4 class="message message_from_us">We curate and create systematic, compact and uncomplicated reporting solutions for your D2C business.</h4>
+                <h4 class="message reply_from_them">Sure, let's talk hit me on my mail here...</h4>
+                <input type="email" required placeholder="your mail here" class="message reply_from_them_2">
+                <input type="submit" class="message message_from_us_2" value="Sure let's talk.">
+            </div>
+            <div class="logo">
+                <div class="logo_image">
+                    <img src="" alt="">
+                </div>
+                <h6>DASHAMLAV</h6>
+                <p>DIGITAL.RESELLERS</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h6>Copyright 2021-2023 Dashamlav.in</h6>
+        <div class="footer-row">
+            <p class="digital-resellers">DIGITAL.RESELLERS</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Whatsapp</a>
+                <a href="#">Linkedin</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="footer-row">
+            <p>123 Street Name</p>
+            <p>City, Postal Code</p>
+            <p>State, Country</p>
+        </div>
+        <div class="footer-row">
+            <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">FAQ</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+            <p class="official-mail">contact@dashamlav.in</p>
+        </div>
+      </footer>
+      
+</body>
+<script>
+
+    function addThemeSwitchEventListener() {
+        const themeSwitch = document.getElementById('theme_switch');
+        const body = document.body;
+
+        themeSwitch.addEventListener('click', function() {
+            if (body.classList.contains('light_theme')) {
+                body.classList.remove('light_theme');
+                body.classList.add('dark_theme');
+                body.style.backgroundColor = '#161616';
+                console.log("bravo6 going dark!")
+                loadThemeCSS('./styles/dark_theme.css');
+            } else {
+                body.classList.remove('dark_theme');
+                body.classList.add('light_theme');
+                body.style.backgroundColor = '#f5f5f5';
+                console.log("Morning Sunshine...")
+                loadThemeCSS('./styles/light_theme.css');
+            }
+        });
+    }
+
+    function loadThemeCSS(fileName) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = fileName;
+        document.head.appendChild(link);
+    }
+
+    addThemeSwitchEventListener();
+
+    let isClipPathSet = false;
+
+    function toggleMenu() {
+        const menuElement = document.querySelector('.menu');
+        const currentClipPath = menuElement.style.clipPath;
+        if (!currentClipPath || currentClipPath === 'circle(0% at 50% 50%)') {
+            menuElement.style.clipPath = 'circle(75% at 50% 50%)';
+        } else {
+            menuElement.style.clipPath = 'circle(0% at 50% 50%)';
+        }
+    }
+
+    window.addEventListener('resize', function() {
+        const menuElement = document.querySelector('.menu');
+        if (window.innerWidth <= 768) {
+            menuElement.style.clipPath = 'circle(0% at 50% 50%)';
+        } else {
+            menuElement.style.clipPath = 'circle(75% at 50% 50%)';
+        }
+    });
+
+    document.getElementById('menu_toggle_switch').addEventListener('click', toggleMenu);
+
+    const accordianItems = document.querySelectorAll('.accordian_item');
+    const colors = ['#38662B', '#003200', '#005E00']; // Add your HEX color codes here
+    let currentColorIndex = 0;
+
+    accordianItems.forEach((accordianItem, index) => {
+    let content = accordianItem.querySelector('ul');
+    let contentHeight = content.scrollHeight;
+    if (index !== 0) {
+        content.style.maxHeight = '0';
+        content.style.opacity = '0';
+    } else {
+        accordianItem.classList.add('open');
+    }
+
+    accordianItem.addEventListener('click', function (event) {
+        event.stopPropagation();
+        if (content.style.maxHeight === '0px') {
+        accordianItems.forEach((item) => {
+            let itemContent = item.querySelector('ul');
+            itemContent.style.maxHeight = '0';
+            itemContent.style.opacity = '0';
+            item.classList.remove('open');
+        });
+        content.style.maxHeight = contentHeight + 'px';
+        content.style.opacity = '1';
+        accordianItem.classList.add('open');
+        document.body.style.backgroundColor = colors[index];
+        } else {
+        content.style.maxHeight = '0';
+        content.style.opacity = '0';
+        accordianItem.classList.remove('open');
+        document.body.style.backgroundColor = colors[index];
+        }
+    });
+    });
+
+    document.addEventListener('click', function (event) {
+    const isClickInside = Array.from(accordianItems).some(item => item.contains(event.target));
+    if (!isClickInside) {
+        document.body.style.backgroundColor = '#161616';
+    }
+    });
+
+
+    // Array of strings to be used as replacements
+    const titles = ['Social Media', 'Advertising', 'E-Commerce', 'Marketplace', 'Content', 'SEO', 'Analytics'];
+
+    // Function to update the element text every 2 seconds
+    function updateTitle() {
+    const titleElement = document.getElementById('hero_dynamic_title');
+    let index = 0;
+    setInterval(() => {
+        titleElement.textContent = titles[index];
+        index = (index + 1) % titles.length;
+    }, 1000); // 2 seconds interval
+    }
+
+    // Call the function to initiate the text update
+    updateTitle();
+
+    const logo = document.getElementById('logo_background');
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 150) {
+        logo.style.filter = 'blur(100px)';
+    } else {
+        logo.style.filter = 'none';
+    }
+    });
+
+</script>
+</html>

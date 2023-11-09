@@ -6,29 +6,30 @@
     // background-color: darkolivegreen;
     h2{
         font-size: 144px;
-        font-family: 'Montserrat';
+        font-family: 'Inter';
         margin-bottom: 50px;
+        font-weight: 300;
     }
     .services_accordian{
-        margin-left: -32px;
+        // margin-left: -32px;
         // padding: 20px 0px 0px 0px;
         list-style-type: none;
         li{
-          cursor: pointer;
             // margin: 30px 0px;
-            border-bottom: 2px solid white;
+            border-bottom: 2px solid $primary_text_color;
             .accordian_item_title{
-                padding: 10px 5vh 10px 5vh;
+                padding: 2rem 3rem 2rem 3rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                cursor: pointer;
                 .service_head{
                     font-size: 42px;
-                    font-weight: 500;
+                    font-weight: 800;
                 }
                 img{
                     height: 36px;
-                    filter: invert(1);
+                    // filter: invert(1);
                 }
             }
             ul{
@@ -46,13 +47,17 @@
                     h4{
                         margin: 5px 0px 10px 0px;
                         font-size: 24px;
-                        font-weight: 600;
+                        font-weight: 800;
                     }
                     p{
                         font-size: 20px;
-                        color: whitesmoke;
+                        color: $secondary_text_color;
                     }
-                }
+                  }
+            }                
+            .closed{
+              height: 0px;
+              opacity: 0;
             }
         }
         // li:hover{
@@ -65,15 +70,17 @@
 }
 @media (max-width: 768px) {
     .services {
-      padding: 5vh 5vh;
+      // padding: 5vh 5vh;
       h2 {
-        font-size: 48px;
+        font-size: 5rem;
+        font-weight: 600;
       }
       .services_accordian {
+        margin-left: -32px;
         li {
           margin: 20px 0px;
           .accordian_item_title {
-            padding: 10px 2.5vh 10px 2.5vh;
+            padding: 10px;
             .service_head {
               font-size: 24px;
             }
@@ -82,6 +89,8 @@
             }
           }
           ul {
+            margin: 0px;
+            // padding: 0px;
             grid-template-columns: auto;
             grid-template-rows: auto;
             gap: 10px;
@@ -108,7 +117,8 @@
       .services_accordian {
         li {
           .accordian_item_title {
-            padding: 10px 3vh 10px 3vh;
+            // padding: 10px 3vh 10px 3vh;
+            // margin-left: -3rem;
           }
         }
       }

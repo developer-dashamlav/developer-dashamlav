@@ -61,10 +61,13 @@
 
 @media (max-width: 1024px) {
     .pre_footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
         padding: 0px 5vw 0px 5vw;
         .messages{
             .message{
-                font-size: 2rem;
+                font-size: 1rem;
+                padding: 2rem;
             }
         }
         .logo{display: none;}

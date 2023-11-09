@@ -8,7 +8,7 @@ nav{
     // padding: 0px 2rem 0px 2rem;
     .logo{
         position: relative;
-        z-index: 4;
+        z-index: 5;
         margin-left: 10vh;
         display: flex;
         align-items: center;
@@ -55,7 +55,7 @@ nav{
         }
     }
     .buttons{
-        z-index: 3;
+        z-index: 5;
         margin-right: 10vh;
         position: relative;
         display: flex;
@@ -64,13 +64,14 @@ nav{
         .dark_theme_switch, .menu_toggle, .contact_nav_CTA{
             height: 2.5rem;
             width: 2.5rem;
-            background-color: white;
+            background-color: $secondary_background_color;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             img{
                 height: 1.5rem;
+                filter: invert(1);
             }
         }
         .contact_nav_CTA{
@@ -89,8 +90,7 @@ nav{
 }   
 
 @media (max-width: 992px) {
-    nav{
-        // padding: none;
+    nav{;
         .logo{
             margin-left: 5vw;
         }
@@ -103,9 +103,10 @@ nav{
             justify-content: space-between;
             height: 100vh;
             width: 100vw;
-            z-index: 1;
-            background-color: black;
-            position: absolute;
+            z-index: 4;
+            background-color: $secondary_background_color;
+            position: fixed;
+            left: 0px;
             top: 0px;
             .links{
                 margin-top: 5rem;
@@ -117,7 +118,7 @@ nav{
                     font-size: 1.2rem;
                     padding: 1rem 2rem 1rem 2rem;
                     border-radius: 3rem;
-                    border: 3px solid white;
+                    border: 3px solid $primary_text_color;
                 }            
                 a:nth-last-child(1){
                     display: block;
@@ -125,7 +126,7 @@ nav{
                 }
                 a:hover{
                     background-color: darkolivegreen;
-                    color: black;
+                    color: $primary_background_color;
                     font-weight: 800;
                     border: none;
                 }
