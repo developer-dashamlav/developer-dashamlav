@@ -689,6 +689,7 @@ nav .buttons .menu_toggle {
   gap: 30px;
 }
 .products_section .products .product {
+  display: block;
   padding: 20px;
   transition: all 0.5s;
   border-bottom: 3px solid var(--primary_text_color);
