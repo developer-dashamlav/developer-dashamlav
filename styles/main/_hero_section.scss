@@ -6,25 +6,28 @@
     margin-top: 10vh;
     display: flex;
     .hero_text{
-        flex-basis: 50%;
+        flex-basis: 55%;
         h1{
             position: relative;
-            font-size: 72px;
+            font-size: 4rem;
             font-weight: 600;
             font-family: 'Inter';
             span{
                 width: 60vw;
                 transform-origin: top left;
                 font-family: 'Inter';
-                display: block;
                 mix-blend-mode: difference;
+                // display: block;
+            }
+            #hero_dynamic_title{
+                color: $secondary_color;
             }
         }
         p{
             margin-top: 20px;
             width: 40vw;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: 600;
         }
         .CTA{
             display: flex;
@@ -70,7 +73,7 @@
         flex-basis: 50%;
         position: fixed;
         transform: translate(100%, -5%);
-        img{
+        #logo_background{
             transition: all 1s;
             height: 1200px;
             // width: 500px;
@@ -99,6 +102,7 @@
         height: 80vh;
         padding: 0px 5vw 0px 5vw;
         .hero_text{
+            z-index: 1;
             h1{
                 font-size: 2.5rem;
                 font-weight: 800;

@@ -5,15 +5,14 @@
     top: 0px;
     left: 0px;
     z-index: -1;
-    // background-color: white;
-    filter: blur(200px) saturate(150%);
+    background-color: $primary_background_color;
+    filter: blur(100px) saturate(150%);
     #background_image{
-        position: absolute;
+        margin: 10vh 0px 0px 50vw;
         z-index: -1;
-        right: 0px;
         height: 150vh;
-        filter: blur(50px);
-        animation: rotate 30s linear infinite;
+        filter: blur(10px);
+        animation: rotate 20s linear infinite;
     }
     @keyframes rotate {
         0%{
@@ -26,7 +25,19 @@
 }
 
 @media (max-width: 1024px) {
-    // #background{
-    //     display: none;
-    // }
+    #background{
+        #background_image{
+            // margin: -20vh 0px 0px -10vw;
+            // margin-top: 60vh;
+            margin-left: 0px;
+        }
+    }
 }
+
+// @media (max-width: 768px) {
+//     #background{
+//         #background_image{
+//             // margin-top: 75vh;
+//         }
+//     }
+// }

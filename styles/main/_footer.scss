@@ -38,16 +38,24 @@ footer{
   }
   .divider{
     height: 3px;
-    background-color: white;
+    background-color: $primary_text_color;
     margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 992px){
   footer{
-    padding: 5vw 0px 5vw 0px;
+    margin-top: 10vh;
+    padding: 0vw 5vw 0px 5vw;
     .footer-row{
       flex-direction: column;
+      // .footer-links{
+      //   justify-content: center;
+      // }
+    }
+    p{
+      // margin-top: 2rem;
+
     }
   }
 }

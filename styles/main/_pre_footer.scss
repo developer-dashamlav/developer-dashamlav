@@ -2,58 +2,79 @@
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    padding: 2rem;
+    grid-template-columns: 3fr 1fr;
     padding: 10vh 10vh;
     .messages{
         position: relative;
         .message{
-            padding: 50px;
-            font-weight: 600;
-            font-size: 36px;
-            font-family: 'Montserrat';
-            margin-bottom: 50px;
-            color: black;
+            border: 3px solid black;
+            padding: 2.5rem;
+            font-weight: 500;
+            font-size: 2rem;
+            font-family: $primary_font;
+            color: $primary_text_color;
+            form{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-flow: column;
+                input, textarea{
+                    display: block;
+                }
+            }
         }
         .message_from_us{
             border-radius: 60px 60px 60px 0px;
-            background-color: darkolivegreen;
-            color: black;
+            background-color: $primary_color;
+            color: $primary_text_color;
         }
         .message_from_us_2{
             margin-top: 20vh;
             border-radius: 0px 60px 60px 60px;
-            background-color: darkolivegreen;
+            background-color: $primary_color;
         }
         .reply_from_them{
-            // position: absolute;
             margin-left: 10vh;
             right: 0px;
             padding: 50px;
             border-radius: 60px 60px 0px 60px;
-            color: black;
-            background-color: whitesmoke;
+            background-color: $primary_background_color;
         }
         .reply_from_them_2{
             position: absolute;
             margin-left: 10vh;
             right: 0px;
             border-radius: 60px 0px 60px 60px;
-            background-color: whitesmoke;
+            background-color: $primary_background_color;
         }
     }
     .logo{
-        padding: 50px;
+        // padding: 3rem;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
         .logo_image{
-            background-color: darkolivegreen;
-            padding: 50px;
+            // padding: 3rem;
             img{
                 height: 50vh;
-                background-color: whitesmoke;
             }
         }
-        h6{
-            font-size: 64px;
-            color: white;
+        .prefooter_logo_text{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            h6{
+                font-size: 4rem;
+                font-weight: 600;
+                color: $primary_text_color;
+            }
+            p{
+                font-size: 1.75rem;
+                font-weight: 600;
+                color: $primary_text_color;
+            }
         }
     }
 }
@@ -61,16 +82,32 @@
 
 @media (max-width: 1024px) {
     .pre_footer{
+        margin-top: 10vh;
         grid-template-columns: 1fr;
         grid-template-rows: 2fr 1fr;
         padding: 0px 5vw 0px 5vw;
         .messages{
             .message{
-                font-size: 1rem;
+                font-size: 1.5rem;
                 padding: 2rem;
             }
+            .message_from_us_2{
+                margin-top: 13vh;
+            }
         }
-        .logo{display: none;}
+        .logo{
+            margin-top: 2vh;
+            .logo_image{
+                img{
+                    height: 20vh;
+                }
+            }
+            .prefooter_logo_text{
+                h6{
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
   

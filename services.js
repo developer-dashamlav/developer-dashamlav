@@ -51,10 +51,18 @@ services = {
             "Recommendations for Improvements"
         ],
         "Branding and Design": [
-            ""
+            "Brand Identity Development",
+            "Logo Design and Branding Materials",
+            "Visual Content Creation",
+            "Brand Style Guidelines",
+            "Brand Reputation Management"
         ],
-        "360° E-Commerce Strategy and Consultation": {
-
-        }
+        "360° E-Commerce Strategy and Consultation": [
+            "Strategic planning and COnsultation",
+            "Market Research and Trend Analysis",
+            "Competitor Analysis",
+            "Customized Roadmap",
+            "Ongoing Support and Guidance"
+        ]
     }
 }

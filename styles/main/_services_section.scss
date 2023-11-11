@@ -1,7 +1,7 @@
 .services{
     position: relative;
     z-index: 2;
-    // height: 100vh;
+    margin-top: 3rem;
     padding: 10vh 10vh;
     // background-color: darkolivegreen;
     h2{
@@ -18,18 +18,18 @@
             // margin: 30px 0px;
             border-bottom: 2px solid $primary_text_color;
             .accordian_item_title{
-                padding: 2rem 3rem 2rem 3rem;
+                padding: 2rem 3rem 1.5rem 3rem;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 cursor: pointer;
                 .service_head{
-                    font-size: 42px;
-                    font-weight: 800;
+                    font-size: 2rem;
+                    font-weight: 600;
+                    font-family: $secondary_font;
                 }
                 img{
                     height: 36px;
-                    // filter: invert(1);
                 }
             }
             ul{
@@ -37,35 +37,49 @@
                 list-style-type: none;
                 display: grid;
                 margin: 0px 2.5rem 0px 3.5rem;
-                // height: 0px;
+                max-height: 0px;
+                overflow: hidden;
                 // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                grid-template-columns: auto auto auto;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-template-rows: auto auto;
                 gap: 20px;
                 li{
                     border: none;
+                    margin-bottom: 2rem;
+                    img{
+                      height: 4rem;
+                      margin-bottom: 0.5rem;
+                    }
                     h4{
                         margin: 5px 0px 10px 0px;
-                        font-size: 24px;
-                        font-weight: 800;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        font-family: $secondary_font;
                     }
                     p{
                         font-size: 20px;
                         color: $secondary_text_color;
                     }
                   }
-            }                
+            }
+            .accordion-item.open {
+              max-height: 2000px; /* Adjust this value based on your content height */
+            }
+            .accordian_item_container{
+              transition: all 0.5s;
+              
+            }
             .closed{
               height: 0px;
               opacity: 0;
             }
         }
-        // li:hover{
-        //     ul{
-        //         height: auto;
-        //         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        //     }
-        // }
+        li:hover{
+            ul{
+                max-height: 35vh;
+                // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
     }
 }
 @media (max-width: 768px) {
@@ -95,6 +109,10 @@
             grid-template-rows: auto;
             gap: 10px;
             li {
+              margin: 0px;
+              img{
+                height: 2rem;
+              }
               h4 {
                 font-size: 18px;
               }
@@ -116,10 +134,18 @@
       }
       .services_accordian {
         li {
-          .accordian_item_title {
-            // padding: 10px 3vh 10px 3vh;
-            // margin-left: -3rem;
+          // .accordian_item_title {
+          //   // padding: 10px 3vh 10px 3vh;
+          //   // margin-left: -3rem;
+          // }
+          ul{
+            li{
+              margin: none;
+            }
           }
+        }
+        li:hover ul{
+          max-height: 100vh;
         }
       }
     }
