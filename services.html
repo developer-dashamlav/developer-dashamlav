@@ -8,21 +8,106 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="icon" type="image/x-icon" href="./assets/dashamlav_logo.svg">
+    <script type="module" src="./scripts/index.js" defer></script>
     <link rel="stylesheet" href="styles/light_theme.css">
     <link rel="stylesheet" href="styles/main.css">
     <title>Dashamlav.in</title>
 </head>
 <body class="light_theme" current_theme="dark" data-scroll-container>
     <div class="loader" id="loader">
-        <!-- <h6 class="loader_text">LOADING...</h6> -->
-        <h6 class="loader_text">LOADING...</h6>
-        <h6 class="loader_text" style="color: darkolivegreen;">DASHAMLAV</h6>
-        <!-- <div class="loading_bar"></div> -->
+        <h6 class="loader_text">100%</h6>
     </div>
     <div id="background">
-        <img id="background_image" src="./assets/dashamlav_background_logo.png" alt="background image">
+        <svg id="background_image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+            <defs>
+                <style>
+                .cls-1 {
+                    isolation: isolate;
+                }
+                .cls-2 {
+                    fill: #6bbd45;
+                }
+                .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8 {
+                    stroke-width: 0px;
+                }
+
+                .cls-2, .cls-4, .cls-8 {
+                    mix-blend-mode: multiply;
+                }
+
+                .cls-3 {
+                    fill: #2e4524;
+                }
+
+                .cls-4 {
+                    fill: #437136;
+                }
+
+                .cls-5 {
+                    fill: #3d6130;
+                }
+
+                .cls-6 {
+                    fill: #324f27;
+                }
+
+                .cls-7 {
+                    fill: #548a3e;
+                }
+
+                .cls-8 {
+                    fill: #599c43;
+                }
+                </style>
+            </defs>
+            <g class="cls-1">
+                <g id="Layer_1" data-name="Layer 1">
+                <circle class="cls-8" cx="360.54" cy="677.42" r="261.42"/>
+                <circle class="cls-2" cx="708.59" cy="674.42" r="261.42"/>
+                <path class="cls-7" d="m446.84,675.45c0,78.5,34.7,147.53,89.41,195.53,52.75-47.91,86.04-115.54,86.04-192.41s-34.87-149.04-89.58-197.05c-52.75,47.91-85.87,117.05-85.87,193.92Z"/>
+                <circle class="cls-4" cx="535.24" cy="372.51" r="261.42"/>
+                <path class="cls-4" d="m533.81,481.52c-40,36.33-69.79,84.19-81.27,139.06,25.94,8.62,54.8,14.01,83.63,14.01s55.25-4.47,80.65-12.7c-12.14-55.42-41.85-104.26-83.01-140.37Z"/>
+                <path class="cls-5" d="m452.54,620.59c26.06,8.66,53.36,14.39,82.34,14.39,126.54,0,231.33-89.55,256.25-208.69-26.06-8.66-53.1-13.29-82.07-13.29-126.54,0-231.59,88.45-256.51,207.59Z"/>
+                <path class="cls-6" d="m279.81,429.09c25.71,117.37,130.56,204.8,255.65,204.8,28.15,0,55.23-3.09,80.63-11.32-25.71-117.37-130.24-206.62-255.33-206.62-28.15,0-55.55,4.9-80.95,13.14Z"/>
+                <path class="cls-3" d="m533.12,480.06c-40.21,36.53-69.05,85.35-80.59,140.53,26.08,8.67,53.71,14.39,82.7,14.39s55.37-4.54,80.91-12.82c-12.21-55.72-41.64-105.79-83.03-142.1Z"/>
+                </g>
+            </g>
+        </svg>
     </div>
-    <main data-scroll-section>
+    <main data-scroll-section class="services_page">
+        <div class="mobile_menu">
+            <div class="icons">
+                <div class="logo">
+                    <!-- <div class="icon">
+                        <img src="./assets/dashamlav_logo.svg" alt="dashamlav logo">
+                    </div> -->
+                    <a href="/index.html">Dashamlav</a>
+                </div>
+                <div class="close_button menu_trigger">
+                    <div class="icon">
+                        <img src="./assets/close_menu.svg" alt="close menu logo">
+                    </div>
+                </div>
+            </div>
+            <div class="main_links">
+                <a href="/services.html">SERVICES</a>
+                <a href="/about.html">ABOUT</a>
+                <a href="/blog.html">BLOG</a>
+                <a href="/team.html">TEAM</a>  
+                <a href="/contact.html">CONTACT</a>  
+            </div>
+            <div class="more_link">
+                <div class="side_links">
+                    <a href="/privacy_policy.html">Privacy Policy</a>
+                    <a href="/faq.html">FAQ</a>
+                </div>
+                <div class="social_links">
+                    <a href="/facebook.com">FACEBOOK</a>
+                    <a href="/instagram.com">INSTAGRAM</a>
+                    <a href="/linked.com">LINKEDIN</a>
+                </div>
+            </div>
+        </div>
         <nav>
             <div class="logo">
                 <div class="icon">
@@ -47,321 +132,353 @@
                 <div class="dark_theme_switch" id="theme_switch">
                     <img src="./assets/theme_switch.svg" alt="dark theme switch">
                 </div>
-                <div class="menu_toggle" id="menu_toggle_switch">
+                <div class="menu_toggle menu_trigger" id="menu_toggle_switch">
                     <img src="./assets/menu_icon.svg" alt="menu open toggle">
                 </div>
-                <a class="contact_nav_CTA" href="./services.html">
+                <a class="contact_nav_CTA" href="./contact.html">
                     CONTACT
                 </a>
             </div>
         </nav>
         <section class="hero_section">
             <section class="hero_text">
-                <h1>Services @ <br><span id="hero_dynamic_title" style="color: darkolivegreen;">DASHAMLAV</span></h1>
+                <h1>
+                    <span class="hero_text_h1">Services @</span><br>
+                    <span class="hero_text_h1" style="color: #2e4524;">Dashamlav.</span>
+                </h1>
                 <div class="CTA">
                     <a href="contact.html" class="CTA_Button">CONTACT</a>
                 </div>
-                <!-- <div class="contact_details">
-                    <p>info@dashamlav.in</p>
-                    <div class="line"></div>
-                    <p>+91 639 269 2911</p>
-                </div> -->
-            </section>
-            <section class="hero_logo">
-                <img src="./assets/dashamlav_logo.svg" alt="" id="logo_background">
             </section>
         </section>
         <section class="services">
-            <!-- <h2>Services</h2> -->
+            <h2>Services</h2>
             <ul class="services_accordian">
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Online Marketplace Optimization</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <ul class="accordian_item_container">
                         <li>
                             <img src="./assets/1A.svg" alt="Product Image">
                             <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <p>Enhance visibility and sales with strategic product listing optimization techniques.</p>
                         </li>
                         <li>
                             <img src="./assets/1B.svg" alt="Product Image">
                             <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <p>Efficiently organize and manage your inventory to meet customer demands and maximize profits.</p>
                         </li>
                         <li>
                             <img src="./assets/1C.svg" alt="Product Image">
                             <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <p>Stay ahead in the market by analyzing and understanding your competitors' strategies and performance.</p>
                         </li>
                         <li>
                             <img src="./assets/1D.svg" alt="Product Image">
                             <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <p>Implement effective pricing strategies to optimize revenue and maintain a competitive edge.</p>
                         </li>
                         <li>
                             <img src="./assets/1E.svg" alt="Product Image">
                             <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <p>Manage and improve your online reputation by actively monitoring and responding to reviews.</p>
                         </li>
-                    </ul>
+                    </ul>                    
                 </li>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">E-Commerce Website Develpment</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
                             <img src="./assets/2A.svg" alt="Product Image">
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <h4>Website Design and Development</h4>
+                            <p>Create visually appealing and functional websites tailored to your brand with expert design and development services.</p>
                         </li>
                         <li>
                             <img src="./assets/2B.svg" alt="Product Image">
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <h4>User Experience and Optimization</h4>
+                            <p>Enhance user satisfaction and engagement by optimizing the overall user experience on your website.</p>
                         </li>
                         <li>
                             <img src="./assets/2C.svg" alt="Product Image">
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <h4>Mobile Responsiveness</h4>
+                            <p>Ensure a seamless and responsive experience for users accessing your website on various mobile devices.</p>
                         </li>
                         <li>
                             <img src="./assets/2D.svg" alt="Product Image">
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <h4>Security and Payment Gateways</h4>
+                            <p>Implement robust security measures and reliable payment gateways to protect user data and facilitate transactions.</p>
                         </li>
                         <li>
                             <img src="./assets/2E.svg" alt="Product Image">
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <h4>Content Management Systems</h4>
+                            <p>Efficiently manage and organize your website content with user-friendly content management systems.</p>
                         </li>
-                    </ul>
+                    </ul>                    
                 </li>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Social Media Marketing</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/3A.svg" alt="Product Image">
+                            <h4>Social Media Strategy Development</h4>
+                            <p>Formulate effective strategies to enhance your brand's presence and engagement across various social media platforms.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/3B.svg" alt="Product Image">
+                            <h4>Content Creation and Posting</h4>
+                            <p>Create engaging and relevant content to captivate your audience, fostering a strong online community.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/3C.svg" alt="Product Image">
+                            <h4>Paid Advertising Campaigns</h4>
+                            <p>Leverage paid advertising campaigns to expand reach, targeting specific audiences for optimal results.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/3D.svg" alt="Product Image">
+                            <h4>Community Engagement</h4>
+                            <p>Build a sense of community around your brand, fostering interaction and building lasting relationships.</p>
                         </li>
                         <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/3E.svg" alt="Product Image">
+                            <h4>Performance Analytics</h4>
+                            <p>Utilize data analytics to measure and optimize the performance of your social media marketing efforts.</p>
                         </li>
                     </ul>
+                    
                 </li>
-                <li class="accordian_item">                    
+                <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Content Marketing</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/4A.svg" alt="Product Image">
+                            <h4>Blog Post Creation</h4>
+                            <p>Craft engaging and informative blog posts that resonate with your audience, driving traffic and engagement.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/4B.svg" alt="Product Image">
+                            <h4>Video Content Production</h4>
+                            <p>Produce captivating video content to convey your brand message and connect with your target audience visually.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/4C.svg" alt="Product Image">
+                            <h4>Infographics and Visuals</h4>
+                            <p>Create visually appealing infographics and visuals to simplify complex information and enhance user understanding.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
-                        </li>
-                        <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/4D.svg" alt="Product Image">
+                            <h4>Content Distribution Strategies</h4>
+                            <p>Strategically distribute your content across various platforms to maximize its reach and impact.</p>
                         </li>
                     </ul>
+                    
                 </li>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Search Engine Optimization</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/5A.svg" alt="Product Image">
+                            <h4>Keyword Research and Optimization</h4>
+                            <p>Optimize your online presence with effective keyword research and on-page and off-page SEO strategies.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/5B.svg" alt="Product Image">
+                            <h4>On-Page and Off-Page SEO</h4>
+                            <p>Enhance your website's visibility and ranking through comprehensive on-page and off-page SEO techniques.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/5C.svg" alt="Product Image">
+                            <h4>Link Building Strategies</h4>
+                            <p>Build a robust online presence by implementing strategic and effective link-building techniques.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/5D.svg" alt="Product Image">
+                            <h4>Local SEO for Physical Stores</h4>
+                            <p>Optimize your website for local searches to drive traffic and increase footfall to your physical stores.</p>
                         </li>
-                        <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
-                        </li>
-                    </ul>
+                    </ul>                    
                 </li>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Paid Advertising Management</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/6A.svg" alt="Product Image">
+                            <h4>Google Ads and Social Media Advertising</h4>
+                            <p>Maximize your reach with targeted Google Ads and Social Media Advertising to boost your brand's visibility.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/6B.svg" alt="Product Image">
+                            <h4>Ad Campaign and Optimization</h4>
+                            <p>Optimize your advertising campaigns for maximum impact and ROI through strategic planning and analysis.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/6C.svg" alt="Product Image">
+                            <h4>AB Testing</h4>
+                            <p>Refine your marketing strategies with AB testing to identify the most effective approaches for your audience.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/6D.svg" alt="Product Image">
+                            <h4>Conversion Tracking and Reporting</h4>
+                            <p>Track and analyze conversions to measure the success of your campaigns and make data-driven decisions.</p>
                         </li>
-                        <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
-                        </li>
-                    </ul>
+                    </ul>                    
                 </li>
-                <li class="accordian_item">                    
+                <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Email Marketing</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/7A.svg" alt="Product Image">
+                            <h4>Email Campaign Strategy</h4>
+                            <p>Craft compelling email campaigns with strategic planning to engage your audience and drive successful outcomes.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/7B.svg" alt="Product Image">
+                            <h4>Subscriber List Management</h4>
+                            <p>Efficiently manage and grow your subscriber list to enhance the effectiveness of your email marketing efforts.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/7C.svg" alt="Product Image">
+                            <h4>Email Design and Content Creation</h4>
+                            <p>Create visually appealing and engaging email content to captivate your audience and convey your message effectively.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/7D.svg" alt="Product Image">
+                            <h4>Personalization and Segmentation</h4>
+                            <p>Personalize your email campaigns and segment your audience for targeted messaging and improved engagement.</p>
                         </li>
                         <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/7E.svg" alt="Product Image">
+                            <h4>Performance Tracking and Analysis</h4>
+                            <p>Monitor and analyze the performance of your email campaigns to refine strategies and achieve optimal results.</p>
                         </li>
-                    </ul>
+                    </ul>                    
                 </li>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Analytics and Reporting</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/8A.svg" alt="Product Image">
+                            <h4>Data Analysis and Interpretation</h4>
+                            <p>Perform in-depth data analysis and interpretation to derive valuable insights for informed business decisions.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/8B.svg" alt="Product Image">
+                            <h4>Customized Performance Reports</h4>
+                            <p>Receive detailed and customized performance reports tailored to your business goals and objectives.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/8C.svg" alt="Product Image">
+                            <h4>Goal Tracking and KPI Management</h4>
+                            <p>Efficiently track and manage your business goals and key performance indicators for measurable success.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/8D.svg" alt="Product Image">
+                            <h4>Recommendations for Improvements</h4>
+                            <p>Get valuable recommendations for improvements based on data analysis to enhance overall performance.</p>
                         </li>
                         <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/8E.svg" alt="Product Image">
+                            <h4>Regular Client Consultation</h4>
+                            <p>Engage in regular consultations to ensure alignment with client objectives and ongoing improvement strategies.</p>
                         </li>
-                    </ul>
+                    </ul>                    
                 </li>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">Branding and Design</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul>
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1A.svg" alt="Product Image">
+                            <h4>Brand Identity Development</h4>
+                            <p>Create a distinctive brand identity that resonates with your audience and sets your business apart.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1B.svg" alt="Product Image">
+                            <h4>Logo Design and Branding Materials</h4>
+                            <p>Get professionally crafted logos and branding materials to establish a strong and memorable brand presence.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1C.svg" alt="Product Image">
+                            <h4>Visual Content Creation</h4>
+                            <p>Enhance your brand's visual appeal with engaging and high-quality visual content creation services.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1D.svg" alt="Product Image">
+                            <h4>Brand Style Guidelines</h4>
+                            <p>Develop comprehensive brand style guidelines for consistent and cohesive brand representation across all channels.</p>
                         </li>
                         <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1D.svg" alt="Product Image">
+                            <h4>Brand Reputation Management</h4>
+                            <p>Manage and maintain your brand reputation effectively to build trust and credibility among your audience.</p>
                         </li>
-                    </ul>
+                    </ul>                    
+                </li>
                 <li class="accordian_item">
                     <div class="accordian_item_title">
                         <h3 class="service_head">360° E-Commerce Strategies and Consultation</h3>
                         <img src="./assets/arrow-diagonal-down.svg" alt="arrow icon">
                     </div>
-                    <ul class="closed">
+                    <div class="accordian_item_container"></div>
+                    <ul class="accordian_item_container">
                         <li>
-                            <h4>Product Listing Optimization</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1A.svg" alt="Product Image">
+                            <h4>Strategic planning and Consultation</h4>
+                            <p>Strategize your e-commerce journey with expert planning and consultation services tailored to your business goals.</p>
                         </li>
                         <li>
-                            <h4>Inventory Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1B.svg" alt="Product Image">
+                            <h4>Market Research and Trend Analysis</h4>
+                            <p>Stay ahead of the competition with in-depth market research and trend analysis for informed business decisions.</p>
                         </li>
                         <li>
-                            <h4>Competitive Analysis</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1C.svg" alt="Product Image">
+                            <h4>Competitor Analysis</h4>
+                            <p>Understand your competitors and market dynamics through comprehensive competitor analysis services.</p>
                         </li>
                         <li>
-                            <h4>Pricing Strategies</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1D.svg" alt="Product Image">
+                            <h4>Customized Roadmap</h4>
+                            <p>Receive a personalized and actionable roadmap to guide your e-commerce strategy towards success.</p>
                         </li>
                         <li>
-                            <h4>Review and Rating Management</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias blanditiis ratione pariatur architecto. Corporis sunt dolorem suscipit natus. Delectus sit, saepe voluptatibus cupiditate quos suscipit quia magnam incidunt excepturi quasi!</p>
+                            <img src="./assets/1D.svg" alt="Product Image">
+                            <h4>Ongoing Support and Guidance</h4>
+                            <p>Benefit from continuous support and guidance throughout your e-commerce journey for sustained success.</p>
                         </li>
                     </ul>
+                    
                 </li>
             </ul>
         </section>
@@ -371,79 +488,30 @@
                 <div class="brand">
                     <div class="client_intro">
                         <h4>CHUK</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi fuga cupiditate adipisci, suscipit eveniet animi provident corrupti veritatis accusamus sapiente dicta quisquam nulla voluptates dolorem sequi recusandae ratione fugiat. Eum!</p>    
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
+                        <p>200+ Sold</p>
                     </div>
-                    <img src="./assets/businessman_1" alt="chuk owener picture">
+                    <!-- <img src="./assets/logo_1.jpg" alt="chuk owener picture"> -->
                 </div>
                 <div class="brand">
                     <div class="client_intro">
                         <h4>JETLYCOT</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi fuga cupiditate adipisci, suscipit eveniet animi provident corrupti veritatis accusamus sapiente dicta quisquam nulla voluptates dolorem sequi recusandae ratione fugiat. Eum!</p>    
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
+                        <p>750+ Sold</p>
                     </div>
-                    <img src="./assets/businessman_2" alt="Lycot owner picture">
+                    <!-- <img src="./assets/logo_2.jpg" alt="chuk owener picture"> -->
                 </div>
                 <div class="brand">
                     <div class="client_intro">
                         <h4>SELZER</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi fuga cupiditate adipisci, suscipit eveniet animi provident corrupti veritatis accusamus sapiente dicta quisquam nulla voluptates dolorem sequi recusandae ratione fugiat. Eum!</p>    
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
+                        <p>800+ Sold</p>
                     </div>
-                    <img src="./assets/businessman_3" alt="Client image">
+                    <!-- <img src="./assets/businessman_3" alt="Client image"> -->
                 </div>
                 <div class="brand">
                     <div class="client_intro">
                         <h4>BANG SAFETY</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi fuga cupiditate adipisci, suscipit eveniet animi provident corrupti veritatis accusamus sapiente dicta quisquam nulla voluptates dolorem sequi recusandae ratione fugiat. Eum!</p>    
-                        <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
+                        <p>270+ Sold</p>
                     </div>
-                    <img src="./assets/businessman_3" alt="Client image">
-                </div>
-            </div>
-        </section>
-        <section class="products_section">
-            <h2>Featured Products</h2>
-            <div class="products">
-                <div class="product">
-                    <div class="images">
-                        <img src="./assets/product_1.jpeg" alt="">
-                    </div>
-                    <h5 class="product_name">Military Green Versatile Sweatshirts For Men (Series 8000)</h5>
-                    <p class="product_description">Rs. 899</p>
-                    <div class="CTA">
-                        <a href="services.html" class="CTA_Secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="images">
-                        <img src="./assets/Product_2.jpeg" alt="">
-                    </div>
-                    <h5 class="product_name">Cozy Blue Winter Hoodies For Men, With Front Kangaroo Pockets</h5>
-                    <p class="product_description">Rs. 899</p>
-                    <div class="CTA">
-                        <a href="services.html" class="CTA_Secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="images">
-                        <img src="./assets/Product_3.jpeg" alt="">
-                    </div>
-                    <h5 class="product_name">Jogger A1</h5>
-                    <p class="product_description">Rs. 899</p>
-                    <div class="CTA">
-                        <a href="services.html" class="CTA_Secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="images">
-                        <img src="./assets/Product_4.jpeg" alt="">
-                    </div>
-                    <h5 class="product_name">Versatile T-Shirts: 5 Vibrant Colors, 5 Comfortable</h5>
-                    <p class="product_description">Rs. 899</p>
-                    <div class="CTA">
-                        <a href="services.html" class="CTA_Secondary">Learn More</a>
-                    </div>
+                    <!-- <img src="./assets/businessman_3" alt="Client image"> -->
                 </div>
             </div>
         </section>
@@ -456,210 +524,39 @@
             </div>
             <div class="logo">
                 <div class="logo_image">
-                    <img src="" alt="">
+                    <img src="./assets/dashamlav_logo.svg" alt="">
                 </div>
-                <h6>DASHAMLAV</h6>
-                <p>DIGITAL.RESELLERS</p>
+                <div class="prefooter_logo_text">
+                    <h6>DASHAMLAV</h6>
+                    <p>DIGITAL.RESELLERS</p>
+                </div>
             </div>
         </section>
+        <footer>
+            <h6>Copyright 2021-2023 Dashamlav.in</h6>
+            <div class="footer-row">
+                <p class="digital-resellers">DIGITAL.RESELLERS</p>
+                <div class="social-links">
+                    <a href="facebook.com">Facebook</a>
+                    <a href="whatsapp.com">Whatsapp</a>
+                    <a href="linked.com">Linkedin</a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-row">
+                <p>15/92-D, Latthe Wali Kothi Civil Lines</p>
+                <p>Kanpur - 208001</p>
+                <p>Uttar Pradesh, India</p>
+            </div>
+            <div class="footer-row">
+                <div class="footer-links">
+                  <a href="./privacy_policy.html">Privacy Policy</a>
+                  <a href="./faq.html">FAQ</a>
+                  <!-- <a href="#">Cookie Policy</a> -->
+                </div>
+                <p class="official-mail">contact@dashamlav.in</p>
+            </div>
+          </footer>
     </main>
-    <footer>
-        <h6>Copyright 2021-2023 Dashamlav.in</h6>
-        <div class="footer-row">
-            <p class="digital-resellers">DIGITAL.RESELLERS</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Whatsapp</a>
-                <a href="#">Linkedin</a>
-            </div>
-        </div>
-        <div class="divider"></div>
-        <div class="footer-row">
-            <p>123 Street Name</p>
-            <p>City, Postal Code</p>
-            <p>State, Country</p>
-        </div>
-        <div class="footer-row">
-            <div class="footer-links">
-              <a href="#">Privacy Policy</a>
-              <a href="#">FAQ</a>
-              <a href="#">Cookie Policy</a>
-            </div>
-            <p class="official-mail">contact@dashamlav.in</p>
-        </div>
-      </footer>
-      
 </body>
-<script>
-    // GSAP goes here.
-    gsap.to(".loader_text", {
-        y: -150, 
-        opacity: 0,
-        skewY: -5,
-        ease: 'power4.out',
-        duration: 0.5, 
-        delay: 2,
-        stagger: 0.05
-    });
-    gsap.from("nav", {
-        opacity: 0,
-        y: 50,
-        delay: 2.5,
-        duration: 2,
-        ease: "power4.out"
-    });
-    gsap.from(".hero_section", {
-        opacity: 0,
-        y: 100,
-        delay: 3,
-        duration: 2,
-        ease: "power4.out"
-    });
-
-    // Locomotive scroll initilized here.
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    if (!isMobile) {
-        const scroller = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
-        smooth: true,
-        smoothMobile: 10,   // Adjust this value to make it faster on mobile
-        lerp: 0.15,         // Adjust this value to make it faster
-        touchMultiplier: 3
-    });
-    }
-
-    // const loader = document.getElementById("loader")
-    // window.addEventListener('load', function() {
-    //     loader.classList.toggle = "close"
-    //     console.log("page loaded")
-    //     // loader.style.height = "0px";
-    //     loader.style.opacity = "0";
-    //     // loader.style.clipPath = "polygon(0 0, 100% 0, 100% 0, 0 0)";
-    // })
-
-    function addThemeSwitchEventListener() {
-        const themeSwitch = document.getElementById('theme_switch');
-        const body = document.body;
-
-        themeSwitch.addEventListener('click', function() {
-            if (body.classList.contains('light_theme')) {
-                body.classList.remove('light_theme');
-                body.classList.add('dark_theme');
-                body.style.backgroundColor = '#161616';
-                console.log("bravo6 going dark!")
-                loadThemeCSS('./styles/dark_theme.css');
-            } else {
-                body.classList.remove('dark_theme');
-                body.classList.add('light_theme');
-                body.style.backgroundColor = '#f5f5f5';
-                console.log("Morning Sunshine...")
-                loadThemeCSS('./styles/light_theme.css');
-            }
-        });
-    }
-
-    function loadThemeCSS(fileName) {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = fileName;
-        document.head.appendChild(link);
-    }
-
-    addThemeSwitchEventListener();
-
-    let isClipPathSet = false;
-
-    function toggleMenu() {
-        const menuElement = document.querySelector('.menu');
-        const currentClipPath = menuElement.style.clipPath;
-        if (!currentClipPath || currentClipPath === 'circle(0% at 50% 50%)') {
-            menuElement.style.clipPath = 'circle(75% at 50% 50%)';
-        } else {
-            menuElement.style.clipPath = 'circle(0% at 50% 50%)';
-        }
-    }
-
-    window.addEventListener('resize', function() {
-        const menuElement = document.querySelector('.menu');
-        if (window.innerWidth <= 768) {
-            menuElement.style.clipPath = 'circle(0% at 50% 50%)';
-        } else {
-            menuElement.style.clipPath = 'circle(75% at 50% 50%)';
-        }
-    });
-
-    document.getElementById('menu_toggle_switch').addEventListener('click', toggleMenu);
-
-    // const accordianItems = document.querySelectorAll('.accordian_item');
-    // const colors = ['#38662B', '#003200', '#005E00']; // Add your HEX color codes here
-    // let currentColorIndex = 0;
-
-    // accordianItems.forEach((accordianItem, index) => {
-    // let content = accordianItem.querySelector('ul');
-    // let contentHeight = content.scrollHeight;
-    // if (index !== 0) {
-    //     content.style.maxHeight = '0';
-    //     content.style.opacity = '0';
-    // } else {
-    //     accordianItem.classList.add('open');
-    // }
-
-    // accordianItem.addEventListener('click', function (event) {
-    //     event.stopPropagation();
-    //     if (content.style.maxHeight === '0px') {
-    //     accordianItems.forEach((item) => {
-    //         let itemContent = item.querySelector('ul');
-    //         itemContent.style.maxHeight = '0';
-    //         itemContent.style.opacity = '0';
-    //         item.classList.remove('open');
-    //     });
-    //     content.style.maxHeight = contentHeight + 'px';
-    //     content.style.opacity = '1';
-    //     accordianItem.classList.add('open');
-    //     // document.body.style.backgroundColor = colors[index];
-    //     } else {
-    //     content.style.maxHeight = '0';
-    //     content.style.opacity = '0';
-    //     accordianItem.classList.remove('open');
-    //     // document.body.style.backgroundColor = colors[index];
-    //     }
-    // });
-    // });
-
-    // document.addEventListener('click', function (event) {
-    // const isClickInside = Array.from(accordianItems).some(item => item.contains(event.target));
-    // if (!isClickInside) {
-    //     document.body.style.backgroundColor = '#161616';
-    // }
-    // });
-
-
-    // Array of strings to be used as replacements
-    const titles = ['Social Media', 'Advertising', 'E-Commerce', 'Marketplace', 'Content', 'SEO', 'Analytics'];
-
-    // // Function to update the element text every 2 seconds
-    // function updateTitle() {
-    // const titleElement = document.getElementById('hero_dynamic_title');
-    // let index = 0;
-    // setInterval(() => {
-    //     titleElement.textContent = titles[index];
-    //     index = (index + 1) % titles.length;
-    // }, 1000); // 2 seconds interval
-    // }
-
-    // // Call the function to initiate the text update
-    // updateTitle();
-
-    const logo = document.getElementById('logo_background');
-
-    window.addEventListener('scroll', () => {
-    if (window.scrollY > 150) {
-        logo.style.filter = 'blur(100px)';
-    } else {
-        logo.style.filter = 'none';
-    }
-    });
-
-</script>
 </html>

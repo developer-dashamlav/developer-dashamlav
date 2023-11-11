@@ -236,7 +236,7 @@ nav .buttons {
 nav .buttons .dark_theme_switch, nav .buttons .menu_toggle, nav .buttons .contact_nav_CTA {
   height: 2.5rem;
   width: 2.5rem;
-  background-color: var(--secondary_background_color);
+  background-color: var(--secondary_text_color);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -981,44 +981,30 @@ footer .divider {
 .services_page .hero_section {
   margin-top: 40vh;
 }
-.services_page .hero_section .hero_text h1 {
+.services_page .hero_section .hero_text h1 span {
   font-size: 10rem;
 }
-.services_page .services .services_accordian .accordian_item {
-  margin-bottom: 2rem;
-}
-.services_page .services .services_accordian .accordian_item .accordian_item_title {
-  margin-bottom: 1rem;
-}
-.services_page .services .services_accordian .accordian_item .accordian_item_title h3 {
-  font-size: 5rem;
-}
-.services_page .services .services_accordian .accordian_item .accordian_item_title img {
-  transform: rotate(180deg, -90deg);
-  padding: 2rem;
-  border-radius: 100%;
-  background-color: white;
-  height: 7rem;
-}
 .services_page .services .services_accordian .accordian_item ul {
-  padding-bottom: 2.5rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 200vh;
 }
-.services_page .services .services_accordian .accordian_item ul li img {
-  padding: 1rem;
-  height: 6rem;
-  filter: invert(1);
-}
-.services_page .services .services_accordian .accordian_item ul li h4 {
-  font-size: 2rem;
-}
-.services_page .services .services_accordian .accordian_item ul li p {
-  font-size: 1rem;
-  width: 35vw;
+.services_page .services .services_accordian .accordian_item:hover {
+  max-height: 200vh;
 }
 
+@media (max-width: 768px) {
+  .services_page .hero_section .hero_text h1 {
+    margin-top: 20vh;
+  }
+  .services_page .hero_section .hero_text h1 span {
+    font-size: 2rem;
+  }
+  .services_page .services .services_accordian .accordian_item ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    max-height: 200vh;
+  }
+}
 .contact_page {
   position: relative;
   z-index: 2;
