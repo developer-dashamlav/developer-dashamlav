@@ -12,16 +12,16 @@ window.addEventListener('load', function () {
         delay: 2,
         stagger: 0.05
     });
-    gsap.from("nav", {
-        opacity: 0,
-        y: 50,
+    gsap.to("nav", {
+        opacity: 1,
+        y: 0,
         delay: 2.5,
         duration: 2,
         ease: "power4.out"
     });
-    gsap.from(".hero_section", {
-        opacity: 0,
-        y: 100,
+    gsap.to(".hero_section", {
+        opacity: 1,
+        y: 0,
         delay: 3,
         duration: 2,
         ease: "power4.out"

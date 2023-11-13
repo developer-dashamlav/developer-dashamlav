@@ -171,6 +171,8 @@ body::-webkit-scrollbar {
 
 nav {
   position: relative;
+  opacity: 0;
+  transform: translateY(100px);
   display: flex;
   align-items: center;
   height: 5rem;
@@ -328,6 +330,8 @@ nav .buttons .menu_toggle {
 }
 .hero_section {
   position: relative;
+  opacity: 0;
+  transform: translateY(100px);
   z-index: 1;
   height: 100vh;
   padding: 0px 10vh;
