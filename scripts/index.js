@@ -127,6 +127,17 @@ window.addEventListener('load', function () {
         });
     });
 
+    var logo = document.getElementById("background")
+    var body_scroll_wrapper = this.document.getElementById("body_scroll")
+    window.addEventListener('scroll', () => {
+        if (body_scroll_wrapper.scrollY > 150) {
+            console.log("applying the styles")
+            logo.style.filter = 'blur(100px) saturate(100%)';
+        } else {
+            logo.style.filter = 'none';
+        }
+    });
+    
 });
 
 
@@ -273,11 +284,3 @@ window.addEventListener('load', function () {
 // updateTitle();
 
 // const logo = document.getElementById('logo_background');
-
-// window.addEventListener('scroll', () => {
-// if (window.scrollY > 150) {
-//     logo.style.filter = 'blur(200px) saturate(100%)';
-// } else {
-//     logo.style.filter = 'none';
-// }
-// });

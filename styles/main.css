@@ -70,14 +70,14 @@ body::-webkit-scrollbar {
   left: 0px;
   z-index: -1;
   background-color: var(--primary_background_color);
-  filter: blur(100px) saturate(150%);
+  transition: all 0.5s;
 }
 #background #background_image {
-  margin: 10vh 0px 0px 50vw;
+  margin: 30vh 0px 0px 75vw;
   z-index: -1;
-  height: 150vh;
-  filter: blur(10px);
-  animation: rotate 20s linear infinite;
+  height: 100vh;
+  animation: rotate 30s linear infinite;
+  animation-play-state: paused;
 }
 @keyframes rotate {
   0% {
@@ -86,6 +86,10 @@ body::-webkit-scrollbar {
   100% {
     transform: rotate(359deg);
   }
+}
+
+#background:hover #background_image {
+  animation-play-state: running;
 }
 
 @media (max-width: 1024px) {

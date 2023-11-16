@@ -13,3 +13,7 @@
     --secondary_background_color: #0a0a0a;
     --ternary_background_color: #000000;
 }
+
+.accordian_item ul li img, .accordian_item_title img{
+    filter: invert(1);
+}
